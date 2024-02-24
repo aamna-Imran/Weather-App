@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: lavenderblush;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #C193C5, #7f7fd5 );
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px 5px rgb(31, 28, 28);
+}
+/* #7f7fd5, #86a8e7,#91eae4 */
+/* #C193C5, #004E92 */
+/* #91eae4  sea green */
+/* #7BC6CC,  org */
+.input-box {
+    padding: 10px 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.input-box button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+    background-color: aliceblue;
+   
+}
+.input-box button:hover {
+    background-color: rgb(204, 207, 211);
+}
+
+.input-box input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 90%;
+    background-color: aliceblue;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
+#temp {
+    font-size: 70px;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(16, 16, 16);
+    margin: 0;
+}
+
+#condition {
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(6, 6, 6);
+    margin: 0;
+
+}
+
+#city {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgb(16, 16, 16)
+}
+
+#weather-img {
+    width: 170px;  
+} 
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+.humidity , .wind {
+    display: flex;
+    position: relative;
+}
+.humidity img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 71px;
+    top: 6px;
+}
+.wind img {
+    width: 50px;
+    height: 50px;
+}
+
+.wind .value , .humidity .value {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(16, 16, 16);
+}
+
+.wind .value h4{
+    font-weight: 400;
+}
+.humidity .value h4{
+    font-weight: 400;
+}
+.wind .value #wind , .humidity .value #humidity {
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgb(29, 28, 28);
+}
